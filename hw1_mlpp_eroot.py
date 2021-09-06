@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import psycopg2 as ps
 
-response_API = requests.get('https://api.census.gov/data/2019/acs/acs5?get=NAME,B01001_001E,B01001_002E,B01001_026E,B02001_002E,B02001_003E,B02001_004E,B02001_005E,B02001_006E,B02001_007E&for=block group:*&in=state:21&in=county:*&in=tract:*&key=459e1b086f172f9f0e4e45c7291db3495c5906a7')
+response_API = requests.get('https://api.census.gov/data/2019/acs/acs5?get=NAME,B01001_001E,B01001_002E,B01001_026E,B02001_002E,B02001_003E,B02001_004E,B02001_005E,B02001_006E,B02001_007E&for=block group:*&in=state:21&in=county:*&in=tract:*&key=<YOUR KEY GOES HERE>')
 data = response_API.text
 parse_json=json.loads(data)
 for i in range(1, len(parse_json)):
