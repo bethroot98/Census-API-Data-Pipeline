@@ -6,4 +6,5 @@ Note, in order for the code to work, you would need to obtain your own census AP
 
 # Sources:
 https://www.stratascratch.com/blog/importing-pandas-dataframe-to-database-in-python/
+
 http://data.census.gpv
