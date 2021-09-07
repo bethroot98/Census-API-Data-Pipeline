@@ -107,7 +107,7 @@ def insert_into_table(curr, state_id, county_id, tract_id, block_group_id, state
                       male_pop, female_pop, white_pop, black_pop, native_american_pop, asian_pop, native_hawaiian_pop, other_race_alone_pop,
                       avg_income, unemployment_rate):
     # Would want to change table name to correct table in order to insert data.
-   insert_into_database = ("""INSERT INTO acs.eroot_acs_data (state_id, county_id, tract_id, block_group_id, state, county, tract, block_group, total_pop, 
+   insert_into_database = ("""INSERT INTO <YOUR TABLE NAME> (state_id, county_id, tract_id, block_group_id, state, county, tract, block_group, total_pop, 
                       male_pop, female_pop, white_pop, black_pop, native_american_pop, asian_pop, native_hawaiian_pop, other_race_alone_pop,
                       avg_income, unemployment_rate)
    VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);""")
